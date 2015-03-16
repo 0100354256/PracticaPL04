@@ -1,5 +1,3 @@
-h1            { text-align: center; font-size: x-large; }
-h2            { text-align: center; }
 th, td        { vertical-align: top; text-align: right; } 
 
 tr:nth-child(odd)    { background-color:#eee; }
