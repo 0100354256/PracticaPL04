@@ -1,3 +1,4 @@
+// See http://en.wikipedia.org/wiki/Comma-separated_values
 "use strict"; // Use ECMAScript 5 strict mode in browsers that support it
 
 $(document).ready(function() {
@@ -14,10 +15,11 @@ function calculate() {
   var lines = temp.split(/\n+\s*/);
   var commonLength = NaN;
   var r = [];
+
   // Template using underscore
-  var row = "<%% _.each(items, function(name) { %>"     +
-            "                    <td><%%= name %></td>" +
-            "              <%% }); %>";
+  var row = "<% _.each(items, function(name) { %>"     +
+            "                    <td><%= name %></td>" +
+            "              <% }); %>";
 
   if (window.localStorage) localStorage.original  = temp;
   
